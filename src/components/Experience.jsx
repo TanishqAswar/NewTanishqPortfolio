@@ -8,31 +8,29 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
     return (
-        <div className='flex flex-col relative pl-8 pb-10 border-l-2 border-secondary'>
+        <div className='flex flex-col relative pl-8 pb-10 border-l-2 border-[#915eff]/30 last:border-transparent last:pb-0'>
             {/* Timeline Dot */}
-            <div className='absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#915eff]' />
+            <div className='absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#915eff] shadow-[0_0_15px_rgba(145,94,255,0.6)]' />
 
             <div
-                className='bg-[#1d1836] p-5 rounded-2xl sm:w-[full] w-full relative'
+                className='bg-black-200/50 backdrop-blur-sm p-6 rounded-2xl w-full relative border border-white/5 hover:border-[#915eff]/30 transition-colors shadow-card-hover'
             >
-                <div className="absolute left-[-26px] top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#1d1836] hidden sm:block" />
-
                 <div>
-                    <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+                    <h3 className='text-white text-[22px] font-bold tracking-wide'>{experience.title}</h3>
                     <p
-                        className='text-secondary text-[16px] font-semibold'
+                        className='text-[#aaa6c3] text-[15px] font-medium mt-1'
                         style={{ margin: 0 }}
                     >
                         {experience.company_name}
                     </p>
-                    <p className="text-gray-400 text-[12px] mt-1">{experience.date}</p>
+                    <p className="text-[#915eff] text-[13px] font-semibold mt-2">{experience.date}</p>
                 </div>
 
-                <ul className='mt-5 list-disc ml-5 space-y-2'>
+                <ul className='mt-5 list-disc ml-5 space-y-3'>
                     {experience.points.map((point, index) => (
                         <li
                             key={`experience-point-${index}`}
-                            className='text-white-100 text-[14px] pl-1 tracking-wider'
+                            className='text-white-100 text-[14px] pl-1 tracking-wider leading-relaxed'
                         >
                             {point}
                         </li>
@@ -48,14 +46,14 @@ const Experience = () => {
         <>
             <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} text-center`}>
-                    What I have done so far
+                    My academic background
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}>
-                    Work Experience.
+                    Education.
                 </h2>
             </motion.div>
 
-            <div className='mt-20 flex flex-col'>
+            <div className='mt-20 flex flex-col max-w-4xl mx-auto'>
                 <div className="ml-4 sm:ml-10">
                     {experiences.map((experience, index) => (
                         <ExperienceCard
