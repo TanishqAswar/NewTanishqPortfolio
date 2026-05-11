@@ -45,7 +45,7 @@ const Navbar = () => {
                     {navLinks.map((link) => (
                         <li
                             key={link.id}
-                            className={`${
+                            className={`relative ${
                                 active === link.title
                                     ? "text-white"
                                     : "text-[#aaa6c3]"
@@ -53,6 +53,9 @@ const Navbar = () => {
                             onClick={() => setActive(link.title)}
                         >
                             <a href={`#${link.id}`}>{link.title}</a>
+                            {active === link.title && (
+                                <span className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[#915eff] rounded-full" />
+                            )}
                         </li>
                     ))}
                     <li>

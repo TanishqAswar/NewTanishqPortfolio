@@ -18,8 +18,8 @@ const SolarSystem = () => {
         resize();
         window.addEventListener("resize", resize);
 
-        // Optimize performance by reducing dense star background count
-        const stars = Array.from({ length: 60 }, () => ({
+        // Stars — increased to 120 for a richer space feel
+        const stars = Array.from({ length: 120 }, () => ({
             x: Math.random() * 2000 - 1000,
             y: Math.random() * 2000 - 1000,
             r: Math.random() * 1.2 + 0.2,
@@ -216,7 +216,7 @@ const SolarSystem = () => {
         <canvas
             ref={canvasRef}
             className="absolute inset-0 w-full h-full pointer-events-none"
-            style={{ display: "block" }}
+            style={{ display: "block", willChange: "transform", transform: "translateZ(0)" }}
         />
     );
 };

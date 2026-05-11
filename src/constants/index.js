@@ -114,23 +114,23 @@ const experiences = [
 const achievements = [
     {
         title: "Codeforces Specialist",
-        subtitle: "Peak Rating: 1455",
+        subtitle: "Peak Rating: 1638",
         icon: "💻",
         points: ["Global ranks 2354, 2818, and 3375.", "Solved 1,000+ coding problems across Codeforces, CodeChef, and LeetCode."],
-        link: "https://codeforces.com/profile/prashantsinghwebdev"
+        link: "https://codeforces.com/profile/Tanishq_CF"
     },
     {
         title: "CodeChef 4★",
         subtitle: "Peak Rating: 1974",
         icon: "👨‍💻",
         points: ["Achieved top global ranks of 64 and 78."],
-        link: "https://www.codechef.com/users/hmt1"
+        link: "https://www.codechef.com/users/Tanishq__"
     },
     {
-        title: "LeetCode Elite",
-        subtitle: "Rating: 1,611",
+        title: "LeetCode Knight",
+        subtitle: "Rating: 1,804",
         icon: "🚀",
-        points: ["Ranked 1,611 on LeetCode."],
+        points: ["Solved 1,000+ problems. Knight badge holder."],
         link: "https://leetcode.com/u/Tanishq__/"
     },
     {
@@ -157,8 +157,14 @@ const achievements = [
         title: "Hacktoberfest 2024",
         subtitle: "Open Source Contributor",
         icon: "🌟",
-        points: ["Contributed to the Foodie delivery system and collaborated on real-world codebases."],
+        points: ["Contributed to the Foodie delivery system and led frontend improvements."],
         link: "https://github.com/M-ayank2005/Foodie"
+    },
+    {
+        title: "Hackathon SemiFinalist",
+        subtitle: "2× Times",
+        icon: "⚡",
+        points: ["Hackofiesta 2025 & AGDT Extension Hackathon semi-finalist."],
     },
 ];
 
@@ -205,6 +211,15 @@ const projects = [
         source_code_link: "https://github.com/TanishqAswar/Block-Penguin-mySpace",
         live_link: "",
     },
+];
+
+export const socialLinks = [
+    { label: "GitHub",   href: "https://github.com/TanishqAswar",            icon: "🐙" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/TanishqAswar/",   icon: "💼" },
+    { label: "Codeforces", href: "https://codeforces.com/profile/Tanishq_CF", icon: "💻" },
+    { label: "LeetCode", href: "https://leetcode.com/u/Tanishq__/",           icon: "🧩" },
+    { label: "Email",    href: "mailto:tanishqaswar2005@gmail.com",            icon: "✉️" },
+    { label: "Phone",    href: "tel:+919503284589",                            icon: "📞" },
 ];
 
 export { services, technologies, experiences, achievements, projects };

@@ -7,12 +7,12 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#0f0c29", // Dep blue/black
-                secondary: "#f7b733", // Gold/Yellow
-                tertiary: "#302b63", // Purple/Blue
-                "black-100": "#24243e",
-                "black-200": "#0f0c29",
-                "white-100": "#ffffff",
+                primary: "#050816",    // True deep dark background
+                secondary: "#aaa6c3", // Muted lavender-grey for secondary text
+                tertiary: "#1d1836",  // Card/surface background
+                "black-100": "#100d25",
+                "black-200": "#090325",
+                "white-100": "#f3f3f3",
             },
             boxShadow: {
                 card: "0px 35px 120px -15px #211e35",
